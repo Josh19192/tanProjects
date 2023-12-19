@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFCC"
+    android:backgroundTint="#FFFFCC"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/text_points1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="monospace"
+        android:text="YOUR SCORE: 0"
+        android:textColor="#1195A6"
+
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_points1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:progressTint="#E91E1E" />
+
+    <include
+        layout="@layout/lay_easybutton"
+        android:layout_width="361dp"
+        android:layout_height="592dp"
+        android:layout_below="@id/progressBar"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="2dp"
+        android:background="#FFFFCC"
+        android:backgroundTint="#FFFFCC"
+        android:layout_marginBottom="20dp" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="314dp"
+        android:layout_height="77dp"
+        android:layout_alignTop="@+id/text_points"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="73dp"
+        android:layout_marginTop="154dp"
+
+
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="480dp"
+        android:background="#FFFFCC"
+        android:backgroundTint="#FFFFCC"
+        android:text="MATCH THE COLOR"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tv_highestScore1"
+        android:layout_width="269dp"
+        android:layout_height="80dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="658dp"
+        android:layout_marginEnd="122dp"
+        android:layout_marginBottom="-27dp"
+        android:text="HIGH SCORE: "
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+
+</RelativeLayout>
